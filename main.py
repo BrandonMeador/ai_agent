@@ -76,7 +76,7 @@ def main():
             print(f"\nIteration {i + 1}")
 
         response = client.models.generate_content(
-            model = "gemini-2.5-pro", 
+            model = "gemini-2.5-flash", 
             contents = messages,
             config = types.GenerateContentConfig(
                 tools=[available_functions],
